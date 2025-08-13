@@ -1,0 +1,136 @@
+{
+  "clanes": [
+    {
+      "id": "1",
+      "nombre": "Linus",
+      "celulas": [
+        {
+          "id": 1,
+          "nombre": "Celula 1",
+          "integrantes": [],
+          "sprints": []
+        },
+        {
+          "id": 2,
+          "nombre": "Celula 2",
+          "integrantes": [],
+          "sprints": []
+        },
+        {
+          "id": 3,
+          "nombre": "Celula 3",
+          "integrantes": [],
+          "sprints": []
+        },
+        {
+          "id": 4,
+          "nombre": "Celula 4",
+          "integrantes": [],
+          "sprints": []
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Loveplace",
+      "celulas": []
+    },
+    {
+      "id": "3",
+      "nombre": "Hopper",
+      "celulas": []
+    },
+    {
+      "id": "4",
+      "nombre": "Ghosling",
+      "celulas": []
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Luis",
+      "celulaId": 1,
+      "rol": "admin",
+      "clanUser": "Linus"
+    },
+    {
+      "id": "2",
+      "nombre": "Ana",
+      "celulaId": 1,
+      "rol": "tutor",
+      "clanUser": "Loveplace"
+    },
+    {
+      "id": "3",
+      "nombre": "Carlos",
+      "celulaId": 2,
+      "rol": "liderdecelula",
+      "clanUser": "hopper"
+    },
+    {
+      "id": "4",
+      "nombre": "Maria",
+      "celulaId": 2,
+      "rol": "miembro",
+      "clanUser": "ghosling"
+    }
+  ],
+  "sprintTasks": [
+    {
+      "id": "1",
+      "title": "Ejemplo de tarea 1",
+      "status": "feature"
+    },
+    {
+      "id": "2",
+      "title": "Ejemplo de tarea 2",
+      "status": "todo"
+    },
+    {
+      "id": "3",
+      "title": "Ejemplo de tarea 3",
+      "status": "inprogress"
+    },
+    {
+      "id": "4",
+      "title": "Ejemplo de tarea 4",
+      "status": "done"
+    },
+    {
+      "id": "5",
+      "title": "Uwu",
+      "description": "XJAJAJ",
+      "assigned": "Jefer",
+      "status": "feature"
+    },
+    {
+      "id": "6",
+      "title": "Intentando drop",
+      "description": "Drop",
+      "assigned": "JefersonSiempre",
+      "status": "feature"
+    },
+    {
+      "id": "7",
+      "title": "uwu",
+      "description": "jasfjsa",
+      "assigned": "jasfja",
+      "status": "feature"
+    },
+    {
+      "id": "8",
+      "title": "JASJFGASJ",
+      "description": "Lol",
+      "assigned": "Jeferson",
+      "status": "feature"
+    },
+    {
+      "id": 9,
+      "title": "Hacer lo de la habilidades",
+      "description": "Test",
+      "assigned": "Vanesa",
+      "status": "feature"
+    }
+  ]
+}

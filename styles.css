@@ -1,0 +1,236 @@
+body {
+  background: #18122B;
+  color: #f3eaff;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+.kanban-column {
+  background: #18122B;
+  border-radius: 16px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  min-width: 260px;
+  min-height: 350px;
+  box-shadow: 0 4px 24px 0 rgba(80,0,120,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid #23213a;
+}
+.kanban-tasks {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.kanban-task {
+  background: #23213a;
+  border: 1.5px solid #3a2066;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.75rem 1rem;
+  cursor: grab;
+  box-shadow: 0 2px 12px 0 rgba(160,132,232,0.10);
+  transition: box-shadow 0.2s, border 0.2s;
+  color: #f3eaff;
+  margin-bottom: 0.5rem;
+}
+.kanban-task.dragging {
+  opacity: 0.6;
+  box-shadow: 0 6px 24px 0 rgba(160,132,232,0.25);
+  border: 2px dashed #fff;
+}
+#kanban-board {
+  background: #11101a;
+  border-radius: 18px;
+  padding: 2rem 1rem 2rem 1rem;
+  box-shadow: 0 8px 32px 0 rgba(80,0,120,0.18);
+}
+#header {
+  background: #231942;
+  color: #fff;
+  padding: 1.5rem 0 0.5rem 2rem;
+  border-bottom: 2px solid #a084e8;
+}
+nav#navbar {
+  margin-top:  33px;
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+}
+nav#navbar a {
+  color: #a084e8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+nav#navbar a:hover {
+  background: #a084e8;
+  color: #231942;
+}
+.clan {
+  background: #111 !important;
+  border-radius: 14px !important;
+  padding: 1.2rem !important;
+  box-shadow: 0 2px 12px 0 rgba(80,0,120,0.10) !important;
+  text-align: center !important;
+  color: #f3eaff !important;
+  border: 1.5px solid #23213a !important;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.clan h3 {
+  color: #a084e8 !important;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.clan:hover {
+  box-shadow: 0 4px 24px 0 rgba(160,132,232,0.18) !important;
+  border: 1.5px solid #a084e8 !important;
+}
+#container-clanes, #container-celulas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ...eliminado porque ya está arriba... */
+/* Grid para los clanes */
+#container-clanes {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#container-celulas {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  gap: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clan {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+div#header {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+nav#navbar {
+  margin-top:  33px;
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+#content button#create-feature-button, #content button[type="submit"] {
+  background: #18122B;
+  color: #a084e8;
+  border: 2px solid #3a2066;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(80,0,120,0.10);
+  margin-bottom: 30px;
+}
+#content button#create-feature-button:hover, #content button[type="submit"]:hover {
+  background: #3a2066;
+  color: #fff;
+  border: 2px solid #a084e8;
+}
+/* Estilos para el formulario de crear feature */
+#feature-form {
+  background: #23213a;
+  border: 1.5px solid #3a2066;
+  border-radius: 14px;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  box-shadow: 0 4px 24px 0 rgba(160,132,232,0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 420px;
+  margin: 2rem auto 0 auto;
+}
+#feature-form label {
+  display: flex;
+  flex-direction: column;
+  color: #a084e8;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+#feature-form input[type="text"],
+#feature-form textarea {
+  background: #18122B;
+  color: #f3eaff;
+  border: 1.5px solid #3a2066;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+#feature-form input[type="text"]:focus,
+#feature-form textarea:focus {
+  border: 1.5px solid #a084e8;
+  outline: none;
+  box-shadow: 0 0 0 2px #a084e8;
+}
+#feature-form button[type="submit"] {
+  background: #3a2066;
+  color: #fff;
+  border: 2px solid #a084e8;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(80,0,120,0.10);
+}
+#feature-form button[type="submit"]:hover {
+  background: #a084e8;
+  color: #231942;
+  border: 2px solid #fff;
+}
+#feature-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+h2 {
+  color: #a084e8;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: #a084e8;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

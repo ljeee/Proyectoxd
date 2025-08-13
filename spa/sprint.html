@@ -1,0 +1,22 @@
+<section>
+    <h4 style="display: flex; justify-content: center; align-items: center; margin-top: 2rem">Sprint</h4>
+    <button id="create-feature-button">Crear Feature</button>
+    <div id="kanban-board" style="display: flex; gap: 1rem; justify-content: center;">
+        <div class="kanban-column" data-status="feature">
+            <h3>Feature</h3>
+            <div class="kanban-tasks" id="feature-tasks"></div>
+        </div>
+        <div class="kanban-column" data-status="todo">
+            <h3>To do</h3>
+            <div class="kanban-tasks" id="todo-tasks"></div>
+        </div>
+        <div class="kanban-column" data-status="inprogress">
+            <h3>In progress</h3>
+            <div class="kanban-tasks" id="inprogress-tasks"></div>
+        </div>
+        <div class="kanban-column" data-status="done">
+            <h3>Done</h3>
+            <div class="kanban-tasks" id="done-tasks"></div>
+        </div>
+    </div>
+</section>
